@@ -10,6 +10,7 @@
 		<string>Cakefile</string>
 		<string>coffee.erb</string>
 		<string>cson</string>
+		<string>cjsx</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!.*\bcoffee</string>
@@ -285,7 +286,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>/(?![\s=/*+{}?]).*?([^\\]|\\\\)/[igmy]{0,4}(?![a-zA-Z0-9])</string>
+			<string>/(?![\s=/*+{}?])(\\.|.)*?/[igmy]{0,4}(?![a-zA-Z0-9])</string>
 			<key>name</key>
 			<string>string.regexp.coffee</string>
 		</dict>
@@ -293,7 +294,7 @@
 			<key>match</key>
 			<string>(?x)
 				\b(?&lt;![\.\$])(
-					break|by|catch|continue|else|finally|for|in|of|if|return|switch|
+					break|by|catch|continue|else|finally|for|in|of|if|return|yield|switch|
 					then|throw|try|unless|when|while|until|loop|do|(?&lt;=for)\s+own
 				)(?!\s*:)\b
 			</string>
