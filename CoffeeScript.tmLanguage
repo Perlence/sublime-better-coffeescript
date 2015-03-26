@@ -103,7 +103,7 @@
 					\s*
 					(?=
 						[:=]
-						(\s*async(\.(cps|thunk|result))?)?
+						(\s*async(\.(cps|thunk|result|iterable))?)?
 						(\s*(\()(.*)(\)))?
 						\s*
 						([=-]&gt;)
